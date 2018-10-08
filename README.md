@@ -21,11 +21,11 @@
  https://zhuanlan.zhihu.com/p/44315278
 
 - 课程资料：
-课程主页： http://cs231n.stanford.edu /
-course note： http://cs231n.github.io /
-知乎翻译： https://zhuanlan.zhihu.com/p/21930884
-推荐b站的视频观看  https://www.bilibili.com/video/av17204303/?p=3 
-注册一个github账号: github.com
+课程主页： http://cs231n.stanford.edu /  
+course note： http://cs231n.github.io /  
+知乎翻译： https://zhuanlan.zhihu.com/p/21930884  
+推荐b站的视频观看  https://www.bilibili.com/video/av17204303/?p=3   
+注册一个github账号: github.com  
 - 后续发布的一些project和exercise会在这个github下：
- https://github.com/orgs/sharedeeply/dashboard
-配置环境：  https://github.com/sharedeeply/DeepLearning-StartKit
+ https://github.com/orgs/sharedeeply/dashboard  
+配置环境：  https://github.com/sharedeeply/DeepLearning-StartKit  
