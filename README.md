@@ -33,15 +33,16 @@ course note： http://cs231n.github.io /
 
 ### 10月11日作业（未完成）
 - 任务名称：计算机视觉综述
-- slides: lecture01
+**slides:** [lecture01](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture01.pdf)
 - 观看视频 p1 和 p2 热身，了解计算机视觉概述以及历史背景
 - 观看 p3 了解整门课程的大纲
-- 阅读 python 和 numpy 教程和代码写一个矩阵的类，实现矩阵乘法，只能使用 python 的类(class)和列表(list)
+- 作业： [阅读 python 和 numpy 教程](https://zhuanlan.zhihu.com/p/20878530?refer=intelligentunit)和[代码](https://github.com/sharedeeply/cs231n-camp/blob/master/tutorial/python_numpy_tutorial.ipynb)写一个矩阵的类，实现矩阵乘法，只能使用 python 的类(class)和列表(list)
 
 ### 10月12日作业（未完成）
 - 任务名称：学习数据驱动的方法和 KNN 算法和线性分类器[上]
-- slides: lecture02
+**slides:** [lecture02](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture02.pdf) 
 - 观看视频 p4 p5 和 p6
-- 学习 图像分类笔记上下 和 线性分类笔记上
+- 学习 [图像分类笔记上下](https://zhuanlan.zhihu.com/p/20894041?refer=intelligentunit) 和 [线性分类笔记上](https://zhuanlan.zhihu.com/p/20918580?refer=intelligentunit)
 - 作业:
-- 完成assignment1 中的 knn.ipynb
+- 完成assignment1 中的 `knn.ipynb`
+
