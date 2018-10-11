@@ -1,4 +1,15 @@
 ## 斯坦福cs231n计算机视觉训练营
+
+- 课程资料：
+课程主页： http://cs231n.stanford.edu /  
+course note： http://cs231n.github.io /  
+知乎翻译： https://zhuanlan.zhihu.com/p/21930884  
+推荐b站的视频观看  https://www.bilibili.com/video/av17204303/?p=3   
+注册一个github账号: github.com  
+- 后续发布的一些project和exercise会在这个github下：
+ https://github.com/orgs/sharedeeply/dashboard  
+配置环境：  https://github.com/sharedeeply/DeepLearning-StartKit  
+
 ### 国庆选修作业（未完成）
 - 预习两套教程
 - github教程：https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
@@ -20,12 +31,15 @@
 - 论算法工程师首先是个工程师之深度学习在排序应用踩坑总结 - 吴海波的文章 - 知乎
  https://zhuanlan.zhihu.com/p/44315278
 
-- 课程资料：
-课程主页： http://cs231n.stanford.edu /  
-course note： http://cs231n.github.io /  
-知乎翻译： https://zhuanlan.zhihu.com/p/21930884  
-推荐b站的视频观看  https://www.bilibili.com/video/av17204303/?p=3   
-注册一个github账号: github.com  
-- 后续发布的一些project和exercise会在这个github下：
- https://github.com/orgs/sharedeeply/dashboard  
-配置环境：  https://github.com/sharedeeply/DeepLearning-StartKit  
+### 10月11日作业（未完成）
+- 任务名称：计算机视觉综述
+- slides: lecture01
+- 观看视频 p1 和 p2 热身，了解计算机视觉概述以及历史背景
+- 观看 p3 了解整门课程的大纲
+- 学习数据驱动的方法和 KNN 算法和线性分类器[上]
+- slides: lecture02
+- 观看视频 p4 p5 和 p6
+- 学习 图像分类笔记上下 和 线性分类笔记上
+- 作业:
+- 阅读 python 和 numpy 教程和代码写一个矩阵的类，实现矩阵乘法，只能使用 python 的类(class)和列表(list)
+- 完成assignment1 中的 knn.ipynb
