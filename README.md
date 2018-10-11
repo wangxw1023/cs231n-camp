@@ -36,10 +36,12 @@ course note： http://cs231n.github.io /
 - slides: lecture01
 - 观看视频 p1 和 p2 热身，了解计算机视觉概述以及历史背景
 - 观看 p3 了解整门课程的大纲
-- 学习数据驱动的方法和 KNN 算法和线性分类器[上]
+- 阅读 python 和 numpy 教程和代码写一个矩阵的类，实现矩阵乘法，只能使用 python 的类(class)和列表(list)
+
+### 10月12日作业（未完成）
+- 任务名称：学习数据驱动的方法和 KNN 算法和线性分类器[上]
 - slides: lecture02
 - 观看视频 p4 p5 和 p6
 - 学习 图像分类笔记上下 和 线性分类笔记上
 - 作业:
-- 阅读 python 和 numpy 教程和代码写一个矩阵的类，实现矩阵乘法，只能使用 python 的类(class)和列表(list)
 - 完成assignment1 中的 knn.ipynb
