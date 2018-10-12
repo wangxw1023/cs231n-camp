@@ -31,7 +31,7 @@ course note： http://cs231n.github.io /
 - 论算法工程师首先是个工程师之深度学习在排序应用踩坑总结 - 吴海波的文章 - 知乎
  https://zhuanlan.zhihu.com/p/44315278
 
-### 10月11日作业（未完成）
+### 10月11日作业（已完成）
 - 任务名称：计算机视觉综述
 **slides:** [lecture01](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture01.pdf)
 - 观看视频 p1 和 p2 热身，了解计算机视觉概述以及历史背景
