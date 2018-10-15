@@ -46,3 +46,13 @@ course note： http://cs231n.github.io /
 - 作业:
 - 完成assignment1 中的 `knn.ipynb`
 
+### 10月15日、10月16、10月18日、10月19日、10月20日作业（未完成）
+1. 学习线性分类器[中 下], 损失函数和优化器  
+   **slides:** [lecture03](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture03.pdf)
+- 观看视频 p7 和 p8，了解更多关于线性分类器，损失函数以及优化器的相关知识
+- 学习[线性分类笔记中下](https://zhuanlan.zhihu.com/p/20945670?refer=intelligentunit)和[最优化笔记](https://zhuanlan.zhihu.com/p/21360434?refer=intelligentunit)，了解 SVM 和梯度下降法
+
+**作业:**
+1. 简述 KNN 和线性分类器的优劣
+2. (可选)学习[矩阵求导](https://zhuanlan.zhihu.com/p/25063314)的方法
+2. 完成assignment1 中 `svm.ipynb`
