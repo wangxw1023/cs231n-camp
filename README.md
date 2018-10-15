@@ -38,7 +38,7 @@ course note： http://cs231n.github.io /
 - 观看 p3 了解整门课程的大纲
 - 作业： [阅读 python 和 numpy 教程](https://zhuanlan.zhihu.com/p/20878530?refer=intelligentunit)和[代码](https://github.com/sharedeeply/cs231n-camp/blob/master/tutorial/python_numpy_tutorial.ipynb)写一个矩阵的类，实现矩阵乘法，只能使用 python 的类(class)和列表(list)
 
-### 10月12日作业（未完成）
+### 10月12日作业（已完成）
 - 任务名称：学习数据驱动的方法和 KNN 算法和线性分类器[上]
 **slides:** [lecture02](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture02.pdf) 
 - 观看视频 p4 p5 和 p6
@@ -46,7 +46,7 @@ course note： http://cs231n.github.io /
 - 作业:
 - 完成assignment1 中的 `knn.ipynb`
 
-### 10月15日、10月16日、10月18日、10月19日、10月20日作业（未完成）
+### 10月15日、10月16日、10月18日、10月19日、10月21日作业（未完成）
 1. 学习线性分类器[中 下], 损失函数和优化器  
    **slides:** [lecture03](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture03.pdf)
 - 观看视频 p7 和 p8，了解更多关于线性分类器，损失函数以及优化器的相关知识
