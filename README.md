@@ -55,7 +55,7 @@ course note： http://cs231n.github.io /
 **作业:**
 1. 简述 KNN 和线性分类器的优劣（已完成）
 2. (可选)学习[矩阵求导](https://zhuanlan.zhihu.com/p/25063314)的方法
-2. 完成assignment1 中 `svm.ipynb`
+2. 完成assignment1 中 `svm.ipynb`（已完成）
 
 ### Week3(10月22日、10月23日、10月25日、10月26日、10月28日)（未完成）
 1. 神经网络初步  
