@@ -53,6 +53,18 @@ course note： http://cs231n.github.io /
 - 学习[线性分类笔记中下](https://zhuanlan.zhihu.com/p/20945670?refer=intelligentunit)和[最优化笔记](https://zhuanlan.zhihu.com/p/21360434?refer=intelligentunit)，了解 SVM 和梯度下降法
 
 **作业:**
-1. 简述 KNN 和线性分类器的优劣
+1. 简述 KNN 和线性分类器的优劣（已完成）
 2. (可选)学习[矩阵求导](https://zhuanlan.zhihu.com/p/25063314)的方法
 2. 完成assignment1 中 `svm.ipynb`
+
+### Week3(10月22日、10月23日、10月25日、10月26日、10月28日)（未完成）
+1. 神经网络初步  
+**slides:** [lecture04](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture04.pdf)
+
+- 观看视频 p9 和 p10
+- 学习[反向传播算法的笔记](https://zhuanlan.zhihu.com/p/21407711?refer=intelligentunit)和反向传播算法的[数学补充](http://cs231n.stanford.edu/handouts/derivatives.pdf)和[例子](http://cs231n.stanford.edu/handouts/linear-backprop.pdf) 
+可选项：[反向传播算法的博客](http://colah.github.io/posts/2015-08-Backprop/)
+
+**作业:**  
+1. 理解并推导反向传播算法
+2. 完成 assignment1 中的 `softmax.ipynb` 和 `two_layer_net.ipynb`
