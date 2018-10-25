@@ -63,7 +63,7 @@ course note： http://cs231n.github.io /
 - 观看视频 p9 和 p10
 ### 10月23日（已完成）
 - 学习[反向传播算法的笔记](https://zhuanlan.zhihu.com/p/21407711?refer=intelligentunit)
-### 10月25日（未完成）
+### 10月25日（已完成）
 -反向传播算法的[数学补充](http://cs231n.stanford.edu/handouts/derivatives.pdf)和[例子](http://cs231n.stanford.edu/handouts/linear-backprop.pdf) 
 可选项：[反向传播算法的博客](http://colah.github.io/posts/2015-08-Backprop/)
 
