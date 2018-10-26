@@ -68,7 +68,7 @@ course note： http://cs231n.github.io /
 可选项：[反向传播算法的博客](http://colah.github.io/posts/2015-08-Backprop/)
 
 **作业:**  
-### 10月26日（未完成）
+### 10月26日（已完成）
 1. 理解并推导反向传播算法
 ### 10月28日（未完成）
 2. 完成 assignment1 中的 `softmax.ipynb` 和 `two_layer_net.ipynb`
