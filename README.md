@@ -70,7 +70,7 @@ course note： http://cs231n.github.io /
 **作业:**  
 ### 10月26日（已完成）
 1. 理解并推导反向传播算法
-### 10月28日（未完成）
+### 10月28日（已完成）
 2. 完成 assignment1 中的 `softmax.ipynb` 和 `two_layer_net.ipynb`
 
 ### Week4 
