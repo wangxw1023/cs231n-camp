@@ -74,13 +74,13 @@ course note： http://cs231n.github.io /
 2. 完成 assignment1 中的 `softmax.ipynb` 和 `two_layer_net.ipynb`
 
 ### Week4 
-### 10月29日（未完成）
+### 10月29日（已完成）
 1. 学习 [pytorch基础](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html) 
-### 10月30日（未完成）
+### 10月30日（已完成）
 2. 了解 kaggle 比赛[房价预测](https://www.kaggle.com/c/house-prices-advanced-regression-techniques), 并学习[模板代码](https://github.com/L1aoXingyu/kaggle-house-price)
 
 **作业:**  
-### 11月1日（未完成）
+### 11月1日（已完成）
 1. 完成 assignment1 中  和 `features.ipynb`
-### 11月2日（未完成）
+### 11月2日（已完成）
 2. 修改房价预测的代码，并提交kaggle查看得分
