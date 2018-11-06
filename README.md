@@ -84,3 +84,21 @@ course note： http://cs231n.github.io /
 1. 完成 assignment1 中  和 `features.ipynb`
 ### 11月2日（已完成）
 2. 修改房价预测的代码，并提交kaggle查看得分
+
+### 11月5日（未完成）
+1. 卷积神经网络初步
+**slides:** [lecture05](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture05.pdf)
+
+### 11月6日（未完成）
+- 观看视频 p11, p12 和 p13，学习 CNN 中的卷积层和池化层
+- 学习[卷积神经网络笔记](https://zhuanlan.zhihu.com/p/22038289?refer=intelligentunit)
+
+**作业:**  
+### 11月7日（未完成）
+1. 完成 assignment2 中 `FullyConnectedNets.ipynb` 和 `BatchNormalization.ipynb`
+
+### 11月8日（未完成）
+2. 思考一下卷积神经网络对比传统神经网络的优势在哪里？为什么更适合处理图像问题
+
+### 11月9日（未完成）
+3. 了解和学习深度学习中的[normalization方法](https://zhuanlan.zhihu.com/p/33173246)
