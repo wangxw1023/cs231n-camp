@@ -85,6 +85,7 @@ course note： http://cs231n.github.io /
 ### 11月2日（已完成）
 2. 修改房价预测的代码，并提交kaggle查看得分
 
+### Week5 
 ### 11月5日（未完成）
 1. 卷积神经网络初步
 **slides:** [lecture05](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture05.pdf)
