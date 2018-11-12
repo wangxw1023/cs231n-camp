@@ -98,7 +98,7 @@ course note： http://cs231n.github.io /
 ### 11月7日（未完成）
 1. 完成 assignment2 中 `FullyConnectedNets.ipynb` 和 `BatchNormalization.ipynb`
 
-### 11月8日（未完成）
+### 11月8日（已完成）
 2. 思考一下卷积神经网络对比传统神经网络的优势在哪里？为什么更适合处理图像问题
 
 ### 11月9日（已完成）
