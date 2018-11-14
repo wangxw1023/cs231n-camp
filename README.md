@@ -103,3 +103,22 @@ course note： http://cs231n.github.io /
 
 ### 11月9日（已完成）
 3. 了解和学习深度学习中的[normalization方法](https://zhuanlan.zhihu.com/p/33173246)
+
+### Week6
+### 11月14日（未完成）
+1. 如何更好的训练网络(上)  
+**slides:** [lecture06](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture06.pdf)
+
+### 11月15日（未完成）
+- 观看视频 p14, p15，学习训练神经网络中的激活函数，初始化和正则化方法
+- 学习[神经网络笔记1](https://zhuanlan.zhihu.com/p/21462488?refer=intelligentunit)和[神经网络笔记2](https://zhuanlan.zhihu.com/p/21560667?refer=intelligentunit)
+
+**作业:**  
+### 11月16日（未完成）
+1. 完成 assignment2 中 `Dropout.ipynb`
+
+### 11月17日（未完成）
+2. 打kaggle比赛 [cifar10](https://www.kaggle.com/c/cifar-10), [模板代码](https://github.com/L1aoXingyu/kaggle-cifar10)
+
+### 11月18日（未完成）
+3. (可选) 完成 [facial keypoint 小项目](https://github.com/udacity/P1_Facial_Keypoints)，[参考代码](https://github.com/L1aoXingyu/P1_Facial_Keypoints)
