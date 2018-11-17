@@ -105,11 +105,11 @@ course note： http://cs231n.github.io /
 3. 了解和学习深度学习中的[normalization方法](https://zhuanlan.zhihu.com/p/33173246)
 
 ### Week6
-### 11月14日（未完成）
+### 11月14日（已完成）
 1. 如何更好的训练网络(上)  
 **slides:** [lecture06](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture06.pdf)
 
-### 11月15日（未完成）
+### 11月15日（已完成）
 - 观看视频 p14, p15，学习训练神经网络中的激活函数，初始化和正则化方法
 - 学习[神经网络笔记1](https://zhuanlan.zhihu.com/p/21462488?refer=intelligentunit)和[神经网络笔记2](https://zhuanlan.zhihu.com/p/21560667?refer=intelligentunit)
 
