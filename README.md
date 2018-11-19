@@ -122,3 +122,24 @@ course note： http://cs231n.github.io /
 
 ### 11月18日（未完成）
 3. (可选) 完成 [facial keypoint 小项目](https://github.com/udacity/P1_Facial_Keypoints)，[参考代码](https://github.com/L1aoXingyu/P1_Facial_Keypoints)
+
+### Week7
+### 11月19日（未完成）
+1. 理解更 fancy 的优化方法，更多的 normalize 以及正则化和迁移学习对网络训练的影响
+- slides: [lecture07](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture07.pdf)
+- 观看视频 p16, p17 和 p18
+- 学习[神经网络笔记3](https://zhuanlan.zhihu.com/p/21741716?refer=intelligentunit)
+
+### 11月20日（未完成）
+2. 了解第二次的 kaggle 比赛 cifar10 分类
+- 报名 cifar10 [比赛](https://www.kaggle.com/c/cifar-10)
+- 学习[模板代码](https://github.com/L1aoXingyu/kaggle-cifar10)
+
+### 11月22日（未完成）
+3. 全面的理解深度学习中的优化算法 
+- 阅读优化算法的[笔记](https://zhuanlan.zhihu.com/p/22252270)
+
+### 11月23日（未完成）
+4. 作业
+- 完成 assignment2 中 `ConvolutionNetworks.ipynb`
+- 修改 cifar10 的网络结构，在知识星球上提交 kaggle 成绩
