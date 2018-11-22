@@ -135,7 +135,7 @@ course note： http://cs231n.github.io /
 - 报名 cifar10 [比赛](https://www.kaggle.com/c/cifar-10)
 - 学习[模板代码](https://github.com/L1aoXingyu/kaggle-cifar10)
 
-### 11月22日（未完成）
+### 11月22日（已完成）
 3. 全面的理解深度学习中的优化算法 
 - 阅读优化算法的[笔记](https://zhuanlan.zhihu.com/p/22252270)
 
