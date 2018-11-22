@@ -124,7 +124,7 @@ course note： http://cs231n.github.io /
 3. (可选) 完成 [facial keypoint 小项目](https://github.com/udacity/P1_Facial_Keypoints)，[参考代码](https://github.com/L1aoXingyu/P1_Facial_Keypoints)
 
 ### Week7
-### 11月19日（未完成）
+### 11月19日（已完成）
 1. 理解更 fancy 的优化方法，更多的 normalize 以及正则化和迁移学习对网络训练的影响
 - slides: [lecture07](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture07.pdf)
 - 观看视频 p16, p17 和 p18
