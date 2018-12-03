@@ -95,7 +95,7 @@ course note： http://cs231n.github.io /
 - 学习[卷积神经网络笔记](https://zhuanlan.zhihu.com/p/22038289?refer=intelligentunit)
 
 **作业:**  
-### 11月7日（未完成）
+### 11月7日（未完成1）
 1. 完成 assignment2 中 `FullyConnectedNets.ipynb` 和 `BatchNormalization.ipynb`
 
 ### 11月8日（已完成）
@@ -114,13 +114,13 @@ course note： http://cs231n.github.io /
 - 学习[神经网络笔记1](https://zhuanlan.zhihu.com/p/21462488?refer=intelligentunit)和[神经网络笔记2](https://zhuanlan.zhihu.com/p/21560667?refer=intelligentunit)
 
 **作业:**  
-### 11月16日（未完成）
+### 11月16日（未完成2）
 1. 完成 assignment2 中 `Dropout.ipynb`
 
-### 11月17日（未完成）
+### 11月17日（未完成3）
 2. 打kaggle比赛 [cifar10](https://www.kaggle.com/c/cifar-10), [模板代码](https://github.com/L1aoXingyu/kaggle-cifar10)
 
-### 11月18日（未完成）
+### 11月18日（未完成4）
 3. (可选) 完成 [facial keypoint 小项目](https://github.com/udacity/P1_Facial_Keypoints)，[参考代码](https://github.com/L1aoXingyu/P1_Facial_Keypoints)
 
 ### Week7
@@ -130,7 +130,7 @@ course note： http://cs231n.github.io /
 - 观看视频 p16, p17 和 p18
 - 学习[神经网络笔记3](https://zhuanlan.zhihu.com/p/21741716?refer=intelligentunit)
 
-### 11月20日（未完成）
+### 11月20日（未完成5）
 2. 了解第二次的 kaggle 比赛 cifar10 分类
 - 报名 cifar10 [比赛](https://www.kaggle.com/c/cifar-10)
 - 学习[模板代码](https://github.com/L1aoXingyu/kaggle-cifar10)
@@ -139,7 +139,46 @@ course note： http://cs231n.github.io /
 3. 全面的理解深度学习中的优化算法 
 - 阅读优化算法的[笔记](https://zhuanlan.zhihu.com/p/22252270)
 
-### 11月23日（未完成）
+### 11月23日（未完成6）
 4. 作业
 - 完成 assignment2 中 `ConvolutionNetworks.ipynb`
 - 修改 cifar10 的网络结构，在知识星球上提交 kaggle 成绩
+
+### （未完成7）
+1. 了解主流深度学习框架之间的区别与联系   
+- slides: [lecture08](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture08.pdf)
+- 观看视频 p19
+
+### （未完成8）
+2. 了解经典的网络结构
+- slides: [lecture09](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture09.pdf)
+- 观看视频 p20
+
+### （未完成9）
+3. 理解卷积神经网络的最新进展
+- 学习笔记[变形卷积核、可分离卷积？卷积神经网络中十大拍案叫绝的操作](https://zhuanlan.zhihu.com/p/28749411)
+
+### （未完成10）
+4. 作业  
+- 完成 assignment2 中的 `PyTorch.ipynb` 
+- 学习[模板代码](https://github.com/L1aoXingyu/kaggle-plant-seeding), 尝试更大的网络结构完成 kaggle 比赛[种子类型识别](https://www.kaggle.com/c/plant-seedlings-classification)的比赛，在知识圈上提交 kaggle 成绩
+
+### （未完成11）
+1. 掌握 RNN 和 LSTM 的基本知识 
+- slides: [lecture10](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture10.pdf)
+- 观看视频 p21
+
+### （未完成12）
+2. 了解语言模型和 image caption 的基本方法
+- slides: [lecture10](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture10.pdf)
+- 观看视频 p22 和 p23
+
+### （未完成13）
+3. 更深入的理解循环神经网络的内部原理
+- 学习blog [Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/), [中文版本](https://www.jianshu.com/p/9dc9f41f0b29)
+
+### （未完成14）
+4. 作业
+- 完成 assignment3 中的 `RNN_Captioning.ipynb` 
+- 完成 assignment3 中的 `LSTM_Captioning.ipynb` 
+- 完成 coco 数据集上的 [image caption 小项目](https://github.com/udacity/CVND---Image-Captioning-Project)，[参考代码](https://github.com/L1aoXingyu/image-caption-project)
