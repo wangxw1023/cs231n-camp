@@ -144,7 +144,7 @@ course note： http://cs231n.github.io /
 - 完成 assignment2 中 `ConvolutionNetworks.ipynb`
 - 修改 cifar10 的网络结构，在知识星球上提交 kaggle 成绩
 
-### （未完成7）
+### （已完成）
 1. 了解主流深度学习框架之间的区别与联系   
 - slides: [lecture08](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture08.pdf)
 - 观看视频 p19
