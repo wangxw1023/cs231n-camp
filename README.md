@@ -149,12 +149,12 @@ course note： http://cs231n.github.io /
 - slides: [lecture08](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture08.pdf)
 - 观看视频 p19
 
-### （未完成8）
+### （已完成）
 2. 了解经典的网络结构
 - slides: [lecture09](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture09.pdf)
 - 观看视频 p20
 
-### （未完成9）
+### （已完成）
 3. 理解卷积神经网络的最新进展
 - 学习笔记[变形卷积核、可分离卷积？卷积神经网络中十大拍案叫绝的操作](https://zhuanlan.zhihu.com/p/28749411)
 
