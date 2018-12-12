@@ -163,7 +163,7 @@ course note： http://cs231n.github.io /
 - 完成 assignment2 中的 `PyTorch.ipynb` 
 - 学习[模板代码](https://github.com/L1aoXingyu/kaggle-plant-seeding), 尝试更大的网络结构完成 kaggle 比赛[种子类型识别](https://www.kaggle.com/c/plant-seedlings-classification)的比赛，在知识圈上提交 kaggle 成绩
 
-### （未完成11）
+### （已完成）
 1. 掌握 RNN 和 LSTM 的基本知识 
 - slides: [lecture10](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture10.pdf)
 - 观看视频 p21
@@ -173,7 +173,7 @@ course note： http://cs231n.github.io /
 - slides: [lecture10](https://github.com/sharedeeply/cs231n-camp/tree/master/slides/cs231n_2018_lecture10.pdf)
 - 观看视频 p22 和 p23
 
-### （未完成13）
+### （已完成）
 3. 更深入的理解循环神经网络的内部原理
 - 学习blog [Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/), [中文版本](https://www.jianshu.com/p/9dc9f41f0b29)
 
