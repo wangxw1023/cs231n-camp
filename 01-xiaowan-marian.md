@@ -2,12 +2,12 @@
 
  1. 可以查阅[marian官方博客](https://marian-nmt.github.io/docs/)中的Installation部分。
  2. 在新服务器上安装marian环境也可以参考文档：[使用开源的神经机器翻译框架Marian搭建机器翻译引擎](https://gitlab.tmxmall.com/tmxmall_nmt/marian_nmt/blob/master/%E4%BD%BF%E7%94%A8%E5%BC%80%E6%BA%90%E7%9A%84%E7%A5%9E%E7%BB%8F%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%A1%86%E6%9E%B6Marian%E6%90%AD%E5%BB%BA%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E5%BC%95%E6%93%8E.md)，该文档中涉及到的所需下载的内容在当前公司的两台服务器中对应的目录分别为：
-			 - `192.168.0.151`：`/media/tmxmall/a36811aa-0e87-4ba1-b14f-370134452449/wangxiuwan/`
-			 - `192.168.0.174`：`/media/wangxiuwan/`
+ - `192.168.0.151`：`/media/tmxmall/a36811aa-0e87-4ba1-b14f-370134452449/wangxiuwan/`
+ - `192.168.0.174`：`/media/wangxiuwan/`
  3. 另外在工作随笔的文档中也有关于marian安装的详细记录：
- 			-  `2019.2.25-marian环境安装.txt`
- 			-  `2019.4.8~2019.4.12-174marian安装-HanLPdemo.txt`
- 			-  2019-8-12已经安装了github上最新的marian-dev，建议后续训练全部在这个新版本上进行。
+ - `2019.2.25-marian环境安装.txt`
+ - `2019.4.8~2019.4.12-174marian安装-HanLPdemo.txt`
+ - 2019-8-12已经安装了github上最新的marian-dev，建议后续训练全部在这个新版本上进行。
 ##### Training
  1. 训练前语料预处理过程
  			- 预处理主要包含6个过程：`tokenize、clean、train truecaser、apply truecaser、train BPE、apply BPE.`
@@ -239,10 +239,11 @@ via --pretrained-model path/to/model.npz this will load weight matrices from mod
 
  - 关于训练参数的详细解释可查阅[官方博客](https://marian-nmt.github.io/docs/)的Command-line options部分内容。
  - 服务器内存不够充分可添加：--keep-best，只保留最新的模型
- - shuffling sentences to temp files: -T,--tempdir TEXT=/tmp        该参数默认为/tmp，也可以指定其他目录，注意查看是否内存充足。这个目录下的文件读到内存后会被快速删除，所以目录下看不到内容。[tmp目录说明](https://github.com/marian-nmt/marian-dev/issues/480)
+ - shuffling sentences to temp files: -T,--tempdir TEXT=/tmp        该参数默认为/tmp，也可以指定其他目录，注意查看是否内存充足，不足时会抛出error writing to file。这个目录下的文件读到内存后会被快速删除，所以目录下看不到内容。[tmp目录说明](https://github.com/marian-nmt/marian-dev/issues/480)
  - 训练是怀疑bleu值，可查看验证目录下的输出：相关参数为--valid-translation-output 
  - 英中和中英模型训练时validate脚本不同，注意设置。
  - 绘制训练曲线：/media/wangxiuwan/marian/examples/tools/trainLogCurve.py
+ - 训练语料过大（1亿8千万句对时，可能会报error reading from file），该问题可能为marian缓存机制bug，目前尚未修复，可设置--shuffle-in-ram正常训练。
 
 ##### Translation
 translation有两种方式，marian-decoder和marian-server
