@@ -42,6 +42,53 @@
 
 ### 3. 安装NVIDIA Driver
 
+step1. 添加nomodeset  
+```shell
+ sudo vim /etc/default/grub
+``` 
+将 
+```shell
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+```
+改为 
+```shell
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
+```
+更新grub
+```shell
+sudo update-grub
+```
+重启系统，之后仍然进入文本模式。
+
+step2. 禁止集成的noubeau驱动
+Ubuntu系统集成的显卡驱动程序是nouveau，它是第三方为NVIDIA开发的开源驱动，我们需要先将其屏蔽才能安装NVIDIA官方驱动。
+将驱动添加到黑名单blacklist.conf中。
+```shell
+sudo vim /etc/modprobe.d/blacklist.conf
+```
+在该文件后添加一下几行：
+```
+blacklist vga16fb
+blacklist nouveau
+blacklist rivafb
+blacklist rivatv
+blacklist nvidiafb
+ ```
+step3. 安装NVidia驱动
+仍然在文本模式下操作。在安装过程中选择替换Ubuntu自带的X server。
+```
+sudo service lightdm stop
+sudo sh NVIDIA-Linux-x86_64-390.59.run
+sudo service lightdm start
+```
+step4. 检验
+在shell中输入
+```shell
+nvidia-smi
+```
+可以看到显卡信息，会列出全部检测到的显卡。
+
+
 ### 4. 安装CUDA Toolkit
 
 ### 5. 安装NVIDIA Driver和CUDA Toolkit过程中踩过的坑（欢迎后续安装环境的小伙伴补充）
@@ -49,8 +96,7 @@
 ### 6. 参考
 * [Ubuntu16.04 安装 Nvidia Drivers+Cuda+Cudnn](https://zhuanlan.zhihu.com/p/68069328)
 * [CUDA wiki](https://github.com/NVIDIA/nvidia-docker/wiki/CUDA)
-* [在Docker中使用Tensorflow Serving](http://fancyerii.github.io/books/tfserving-docker/)
+* [CUDA Toolkit Documentation v9.2.148](https://docs.nvidia.com/cuda/archive/9.2/)
 * [NVIDIA CUDA Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#system-requirements)
 * [ubuntu 16.04系统下GTX970显卡不支持导致无法开机或开机黑屏解决方法](https://blog.csdn.net/Good_Day_Day/article/details/74352534)
 * [Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8?from=groupmessage)
-* [Nvidia驱动下载](https://www.geforce.cn/drivers)
