@@ -28,17 +28,42 @@
 ### 2. 分别下载安装文件
 安装NVIDIA Driver和CUDA Toolkit有多种方式，但是经过各种前人总结以及自己踩坑后推荐分别下载NVIDIA Driver和CUDA Toolkit的run文件进行安装。
 
-1. NVIDIA Driver run文件下载
+2.1 NVIDIA Driver run文件下载
 
 在[NVIDIA Driver Downloads](https://www.nvidia.com/Download/Find.aspx?lang=en-us)页面输入Product Type, Product Series, Product, Operating System等查询条件，即可下载对应的NVIDIA Driver安装文件。
 
-本文下载的NVIDIA Driver run文件名为：NVIDIA-Linux-x86_64-418.43.run，存储目录为192.168.0.174的/work/xiaowan。
+本文下载的NVIDIA Driver run文件名为：`NVIDIA-Linux-x86_64-418.43.run`，存储目录为192.168.0.174的`/work/xiaowan`。
 
-2. CUDA Toolkit run文件下载
+2.2 CUDA Toolkit run文件下载
 
 在[CUDA Toolkit Archive Downloads](https://developer.nvidia.com/cuda-toolkit-archive)页面选择所需安装的CUDA版本，然后在点开的页面中选择Operating System, Architecture, Distribution, Version, Installer Type即可下载对应的CUDA Toolkit 安装文件。
 
-本文下载的CUDA Toolkit run文件名为：cuda_9.2.148_396.37_linux.run，存储目录为192.168.0.174的/work/xiaowan。
+本文下载的CUDA Toolkit run文件名为：`cuda_9.2.148_396.37_linux.run`，存储目录为192.168.0.174的`/work/xiaowan`。
+
+2.3 NVIDIA cuDNN文件下载
+
+在[cuDNN Download](https://developer.nvidia.com/rdp/cudnn-download)页面进行文件下载。
+
+NVIDIA cuDNN文件下载需要用NVIDIA account登录。
+
+登录后，选择`I Agree To the Terms of the cuDNN Software License Agreement`，即可进行NVIDIA cuDNN版本的选择。点击`Archived cuDNN Releases`选项，可以下载NVIDIA cuDNN的历史发布版本。
+
+NVIDIA cuDNN的版本选择跟CUDA Toolkit、TensorFlow、python等软件版本关联，具体可查看[经过测试的构建配置](https://www.tensorflow.org/install/source#linux).
+
+选择了NVIDIA cuDNN版本后，还需根据操作系统选择相应的版本，
+
+本文选择`Download cuDNN v7.6.0 (May 20, 2019), for CUDA 9.2`；
+
+然后选择下载`cuDNN Library for Linux`；
+
+下载的文件名为：`cudnn-9.2-linux-x64-v7.6.0.64.solitairetheme8`，存储目录为192.168.0.174的`/work/xiaowan`。
+
+`.solitairetheme8`是一种压缩文件，可以转为tgz文件。
+
+```
+cp  cudnn-9.2-linux-x64-v7.6.0.64.solitairetheme8 cudnn-9.2-linux-x64-v7.6.0.64.tgz
+tar -xvf cudnn-9.2-linux-x64-v7.6.0.64.tgz
+```
 
 ### 3. 安装NVIDIA Driver
 
@@ -77,10 +102,10 @@ blacklist rivafb
 blacklist rivatv
 blacklist nvidiafb
  ```
-step3. 安装NVidia驱动
+step3. 安装NVIDIA Driver
 ```
 sudo service lightdm stop
-sudo sh NVIDIA-Linux-x86_64-390.59.run
+sudo sh NVIDIA-Linux-x86_64-418.43.run
 sudo service lightdm start
 ```
 注：在安装过程中选择替换Ubuntu自带的X server，即下面所述：
@@ -94,14 +119,69 @@ nvidia-smi
 ```
 可以看到显卡信息，会列出全部检测到的显卡。
 
-### 4. 安装CUDA Toolkit
+### 4. 安装CUDA Toolkit 和 NVIDIA cuDNN
+
+CUDA Toolkit的安装可以参考官方的文档：[CUDA Toolkit Documentation v9.2.148](https://docs.nvidia.com/cuda/archive/9.2/)
+step1. Pre-installation Actions：
+- Verify the system has a CUDA-capable GPU.
+- Verify the system is running a supported version of Linux.
+- Verify the system has gcc installed.
+- Verify the system has the correct kernel headers and development packages installed.
+- Download the NVIDIA CUDA Toolkit.
+- Handle conflicting installation methods.
+
+step2. CUDA Toolkit Runfile Installation
+```shell
+sudo sh cuda_9.2.148_396.37_linux.run
+```
+
+注：在CUDA Toolkit的安装过程中，有一个选项一定要引起注意，如下所示，因为NVIDIA Driver已经安装过了，所以这里一定要选n。
+```
+Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 396.37?
+    (y)es/(n)o/(q)uit: n   #因为NVIDIA驱动已经安装好了，所以这里不需要
+```
+
+step3. NVIDIA cuDNN安装
+
+在2.3中，我们下载了NVIDIA cuDNN，并对tar文件解压，可以在`/work/xiaowan`目录中看到一个`cuda/`；
+
+NVIDIA cuDNN安装即将其中的`lib64`及`include`文件夹复制到CUDA的安装路径。
+
+CUDA默认的安装路径是`/usr/local/cuda-9.2`。
+```shell
+sudo cp cuda/lib64/* /usr/local/cuda-9.2/lib64/
+sudo cp cuda/include/* /usr/local/cuda-9.2/include/
+```
+
+最后需要在`~/.bashrc`中配置如下的环境变量
+```shell
+export CUDA_INSTALL_DIR=/usr/local/cuda
+export CUDA_HOME=/usr/local/cuda
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+```
+执行
+```shell
+source ~/.bashrc
+```
+step4. 检验
+在命令行中输入
+```shell
+cat /usr/local/cuda/version.txt
+```
+可以看到安装的CUDA Toolkit版本信息。
+
+在命令行中输入
+```shell
+cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+```
+可以看到安装的NVIDIA cuDNN版本信息。
 
 ### 5. 安装NVIDIA Driver和CUDA Toolkit过程中踩过的坑（欢迎后续安装环境的小伙伴补充）
 
 ### 6. 参考
 * [Ubuntu16.04 安装 Nvidia Drivers+Cuda+Cudnn](https://zhuanlan.zhihu.com/p/68069328)
 * [CUDA wiki](https://github.com/NVIDIA/nvidia-docker/wiki/CUDA)
-* [CUDA Toolkit Documentation v9.2.148](https://docs.nvidia.com/cuda/archive/9.2/)
+* 
 * [NVIDIA CUDA Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#system-requirements)
 * [ubuntu 16.04系统下GTX970显卡不支持导致无法开机或开机黑屏解决方法](https://blog.csdn.net/Good_Day_Day/article/details/74352534)
 * [Ubuntu16.04 + 1080Ti深度学习环境配置教程](https://www.jianshu.com/p/5b708817f5d8?from=groupmessage)
