@@ -220,11 +220,11 @@ However, the fact that nvidia-smi indicates: CUDA Version: 10.0 doesn't actually
 - 执行：`nvcc --version`
 - 结果：`The program 'nvcc' is currently not installed. You can install it by typing: apt install nvidia-cuda-toolkit`
 - 习惯性根据服务器提示执行：`apt install nvidia-cuda-toolkit`
-- 最后命令执行完发现NVIDIA Driver更新到了最新的版本430.26。。。但是`nvcc --version`显示的CUDA版本还是7.5。。。
+- 最后命令执行完发现NVIDIA Driver有一次将版本退回到了384.130，后来又试了一次更新到了最新的版本430.26。。。但是`nvcc --version`显示的CUDA版本还是7.5。。。
 - 解决方法：sudo vim /usr/bin/nvcc，把里面的内容"exec /usr/lib/nvidia-cuda-toolkit/bin/nvcc" 改成"exec /usr/local/cuda/bin/nvcc"
 - 参考：[CUDA版本检测](https://zhuanlan.zhihu.com/p/48641682)
 
-### 6. 参考
+### 6. 其他参考
 * [Ubuntu16.04 安装 Nvidia Drivers+Cuda+Cudnn](https://zhuanlan.zhihu.com/p/68069328)
 * [CUDA wiki](https://github.com/NVIDIA/nvidia-docker/wiki/CUDA)
 * [深度学习服务器搭建及开发环境配置](https://gitlab.tmxmall.com/tmxmall_nmt/t2t_transformer_nmt/blob/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%8F%8A%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.md)
