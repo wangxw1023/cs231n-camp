@@ -58,7 +58,10 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
 ```shell
 sudo update-grub
 ```
-重启系统，之后仍然进入文本模式。
+重启系统。
+```shell
+shutdown -r now
+```
 
 step2. 禁止集成的noubeau驱动
 Ubuntu系统集成的显卡驱动程序是nouveau，它是第三方为NVIDIA开发的开源驱动，我们需要先将其屏蔽才能安装NVIDIA官方驱动。
@@ -75,11 +78,14 @@ blacklist rivatv
 blacklist nvidiafb
  ```
 step3. 安装NVidia驱动
-仍然在文本模式下操作。在安装过程中选择替换Ubuntu自带的X server。
 ```
 sudo service lightdm stop
 sudo sh NVIDIA-Linux-x86_64-390.59.run
 sudo service lightdm start
+```
+注：在安装过程中选择替换Ubuntu自带的X server，即下面所述：
+```
+Would you like to run the nvidia-xconfig utility to automatically update your X configuration file so that the NVIDIA X driver will be used when you restart X?  Any pre-existing X configuration file will be backed up.
 ```
 step4. 检验
 在shell中输入
@@ -87,7 +93,6 @@ step4. 检验
 nvidia-smi
 ```
 可以看到显卡信息，会列出全部检测到的显卡。
-
 
 ### 4. 安装CUDA Toolkit
 
