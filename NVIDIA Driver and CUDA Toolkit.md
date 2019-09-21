@@ -220,9 +220,52 @@ However, the fact that nvidia-smi indicates: CUDA Version: 10.0 doesn't actually
 - 执行：`nvcc --version`
 - 结果：`The program 'nvcc' is currently not installed. You can install it by typing: apt install nvidia-cuda-toolkit`
 - 习惯性根据服务器提示执行：`apt install nvidia-cuda-toolkit`
-- 最后命令执行完发现NVIDIA Driver有一次将版本退回到了384.130，后来又试了一次更新到了最新的版本430.26。。。但是`nvcc --version`显示的CUDA版本还是7.5。。。
+- 最后命令执行完发现NVIDIA Driver有一次将版本退回到了384.130，后来又试了一次更新到了最新的版本430.26。。。原因估计是`apt install nvidia-cuda-toolkit`后面没有跟toolkit的版本号。但是`nvcc --version`显示的CUDA版本还是7.5。。。
 - 解决方法：sudo vim /usr/bin/nvcc，把里面的内容"exec /usr/lib/nvidia-cuda-toolkit/bin/nvcc" 改成"exec /usr/local/cuda/bin/nvcc"
 - 参考：[CUDA版本检测](https://zhuanlan.zhihu.com/p/48641682)
+
+5.5 经测试，NVIDIA Driver和CUDA Toolkit的安装顺序可以随意。
+
+5.6 `ppa`源安装测试失败。
+
+- 执行：
+```
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt-get update
+sudo apt-get install nvidia-398
+```
+- 结果：未成功，没有像网上搜的那样安装简单。。。
+```
+19:34:52The following packages were automatically installed and are no longer required:
+19:34:52  bbswitch-dkms ca-certificates-java default-jre default-jre-headless dkms fonts-dejavu-extra java-common lib32gcc1 libc6-i386 libcublas7.5 libcudart7.5 libcufft7.5
+19:34:52  libcufftw7.5 libcurand7.5 libcusolver7.5 libcusparse7.5 libdrm-dev libgif7 libgl1-mesa-dev libjansson4 libnppc7.5 libnppi7.5 libnpps7.5 libnvblas7.5 libnvrtc7.5
+19:34:52  libnvtoolsext1 libnvvm3 libpthread-stubs0-dev libthrust-dev libvdpau-dev libvdpau1 libx11-dev libx11-doc libx11-xcb-dev libxau-dev libxcb-dri2-0-dev libxcb-dri3-dev
+19:34:52  libxcb-glx0-dev libxcb-present-dev libxcb-randr0-dev libxcb-render0-dev libxcb-shape0-dev libxcb-sync-dev libxcb-xfixes0-dev libxcb1-dev libxdamage-dev libxdmcp-dev
+19:34:52  libxext-dev libxfixes-dev libxnvctrl0 libxshmfence-dev libxxf86vm-dev mesa-common-dev mesa-vdpau-drivers ocl-icd-libopencl1 opencl-headers openjdk-8-jre
+19:34:52  openjdk-8-jre-headless pkg-config screen-resolution-extra vdpau-driver-all x11proto-core-dev x11proto-damage-dev x11proto-dri2-dev x11proto-fixes-dev
+19:34:52  x11proto-gl-dev x11proto-input-dev x11proto-kb-dev x11proto-xext-dev x11proto-xf86vidmode-dev xorg-sgml-doctools xserver-xorg-legacy xtrans-dev
+19:34:52Use 'sudo apt autoremove' to remove them.
+19:34:52The following packages will be REMOVED:
+19:34:52  nvidia-384* nvidia-cuda-toolkit* nvidia-opencl-icd-384* nvidia-prime* nvidia-settings*
+19:34:520 upgraded, 0 newly installed, 5 to remove and 114 not upgraded.
+19:34:52After this operation, 0 B of additional disk space will be used.
+19:34:54Do you want to continue? [Y/n] y
+19:34:55(Reading database ... 110413 files and directories currently installed.)
+19:34:55Removing nvidia-384 (384.130-0ubuntu0.16.04.2) ...
+19:34:55Purging configuration files for nvidia-384 (384.130-0ubuntu0.16.04.2) ...
+19:34:55update-initramfs: deferring update (trigger activated)
+19:34:55Removing nvidia-cuda-toolkit (7.5.18-0ubuntu1) ...
+19:34:55Purging configuration files for nvidia-cuda-toolkit (7.5.18-0ubuntu1) ...
+19:34:55Removing nvidia-opencl-icd-384 (384.130-0ubuntu0.16.04.2) ...
+19:34:55Purging configuration files for nvidia-opencl-icd-384 (384.130-0ubuntu0.16.04.2) ...
+19:34:55Removing nvidia-prime (0.8.2) ...
+19:34:55Purging configuration files for nvidia-prime (0.8.2) ...
+19:34:55Removing nvidia-settings (361.42-0ubuntu1) ...
+19:34:55Purging configuration files for nvidia-settings (361.42-0ubuntu1) ...
+19:34:55Processing triggers for initramfs-tools (0.122ubuntu8.14) ...
+19:34:55update-initramfs: Generating /boot/initrd.img-4.4.0-142-generic
+19:35:04W: mdadm: /etc/mdadm/mdadm.conf defines no arrays.
+```
 
 ### 6. 其他参考
 * [Ubuntu16.04 安装 Nvidia Drivers+Cuda+Cudnn](https://zhuanlan.zhihu.com/p/68069328)
